@@ -1,0 +1,27 @@
+{
+  "extends": "@vue/tsconfig/tsconfig.web.json",
+  "include": ["**/*.ts", "**/*.d.ts", "**/*.tsx", "**/*.vue"],
+  "exclude": ["node_modules", "src/**/__tests__/*", "**/*.js"],
+  "compilerOptions": {
+    "composite": true,
+    "baseUrl": "./",
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "strict": true,
+    "jsx": "preserve",
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "importHelpers": true,
+    "noImplicitThis": true,
+    "allowSyntheticDefaultImports": true,
+    "types": ["vite/client", "@vueuse/core"],
+    "typeRoots": ["./node_modules/@types/", "./types/"],
+    "lib": ["esnext", "dom"],
+    "paths": {
+      "@/*": ["./src/*"],
+      "-/*": ["./*"]
+    }
+  }
+}

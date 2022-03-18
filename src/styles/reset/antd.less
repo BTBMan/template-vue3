@@ -1,0 +1,104 @@
+// .anticon {
+//   svg {
+//     display: block;
+//   }
+// }
+
+.ant-modal-title {
+  text-align: center;
+}
+
+.ant-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: @font-size-base;
+  border-radius: 5px;
+
+  .anticon {
+    font-size: 12px;
+
+    &:not(.anticon-loading) {
+      flex: 1;
+    }
+
+    + span {
+      margin-left: 6px;
+    }
+  }
+
+  &.ant-btn-lg {
+    min-width: 60px;
+    height: 40px;
+    padding: 0 10px;
+    border-radius: @border-radius-base;
+  }
+}
+
+.ant-calendar-picker-container {
+  .ant-calendar-picker-container-content {
+    .ant-calendar-panel {
+      .ant-calendar-date-panel {
+        .ant-calendar-body {
+          .ant-calendar-table {
+            .ant-calendar-tbody {
+              tr {
+                .ant-calendar-cell {
+                  .ant-calendar-date {
+                    border-radius: 50%;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.ant-message {
+  .ant-message-notice {
+    .ant-message-notice-content {
+      padding: 0 17px;
+      min-width: 400px;
+
+      .ant-message-custom-content {
+        display: flex;
+        align-items: center;
+        min-height: 40px;
+
+        span {
+          &:not(.anticon) {
+            color: @font-color-base;
+          }
+        }
+
+        .anticon {
+          top: 0;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+
+.ant-select {
+  text-align: left;
+}
+
+.ant-select-tree-dropdown {
+  .ant-select-tree {
+    .ant-select-tree-checkbox {
+      .ant-select-tree-checkbox-inner {
+        border-radius: 2px;
+      }
+    }
+  }
+}
+
+.ant-checkbox {
+  .ant-checkbox-inner {
+    border-radius: 2px;
+  }
+}
