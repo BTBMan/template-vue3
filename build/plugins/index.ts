@@ -8,7 +8,7 @@ import OptimizationPersist from 'vite-plugin-optimize-persist';
 import PkgConfig from 'vite-plugin-package-config';
 import eslintPlugin from 'vite-plugin-eslint';
 import stylelintPlugin from 'vite-plugin-stylelint';
-import { autoImportAliIconCssByJs } from './autoImportAliIconCssByJs';
+import { IconfontCss } from 'vite-plugin-iconfont-css';
 
 export const plugins: (Plugin | Plugin[])[] = [
   vue(),
@@ -53,5 +53,5 @@ export const plugins: (Plugin | Plugin[])[] = [
   }),
   PkgConfig(),
   OptimizationPersist(),
-  autoImportAliIconCssByJs(),
+  IconfontCss(),
 ];

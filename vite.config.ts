@@ -13,6 +13,7 @@ export default defineConfig({
     alias: {
       '@': pathResolve('src'),
       '-': pathResolve(''),
+      moment: 'dayjs',
     },
   },
   server,
