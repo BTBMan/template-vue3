@@ -5,7 +5,7 @@ import { plugins } from './build/plugins';
 import { css } from './build/css';
 
 export default defineConfig({
-  base: '/',
+  base: '/[name]/',
   envDir: pathResolve('env'),
   plugins,
   css,

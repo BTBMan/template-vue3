@@ -3,6 +3,6 @@
   "exclude": [],
   "compilerOptions": {
     "composite": true,
-    "types": ["vite/client", "node", "jsdom"]
+    "types": ["vite/client", "node", "jsdom", "vitest"]
   }
 }

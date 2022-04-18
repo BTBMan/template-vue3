@@ -1,5 +1,5 @@
 {
-  "name": "template-vue3",
+  "name": "[name]",
   "description": "A Vue3 template with Vite, Eslint, Prettier, Stylelint, Vitest, Husky, Commitlint, Postcss",
   "version": "0.0.0",
   "scripts": {
