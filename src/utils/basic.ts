@@ -1,5 +1,3 @@
-import { message } from 'ant-design-vue';
-
 /**
  * 解析formString类型的字符串为对象
  * @param  {string} formString - formString格式的字符串 ep: `a=1;b=2`

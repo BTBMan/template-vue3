@@ -26,7 +26,7 @@
 </script>
 
 <template>
-  <a-menu class="sidebar" mode="inline" @select="(menuSelect as MenuItem)">
+  <a-menu class="sidebar" mode="inline" @select="menuSelect as MenuItem">
     <a-menu-item key="defaultTest" title="默认测试页面" :tabComponent="Test">
       <user-outlined />
       <span class="nav-text">默认测试页面</span>

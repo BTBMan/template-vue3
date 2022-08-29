@@ -1,1 +1,1 @@
-export * from './useAttrs'
+export * from './useAttrs';

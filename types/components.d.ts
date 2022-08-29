@@ -4,25 +4,25 @@
 
 declare module 'vue' {
   export interface GlobalComponents {
-    AButton: typeof import('ant-design-vue/es')['Button']
-    AConfigProvider: typeof import('ant-design-vue/es')['ConfigProvider']
-    ALayout: typeof import('ant-design-vue/es')['Layout']
-    ALayoutContent: typeof import('ant-design-vue/es')['LayoutContent']
-    ALayoutSider: typeof import('ant-design-vue/es')['LayoutSider']
-    AMenu: typeof import('ant-design-vue/es')['Menu']
-    AMenuItem: typeof import('ant-design-vue/es')['MenuItem']
-    ASubMenu: typeof import('ant-design-vue/es')['SubMenu']
-    Default: typeof import('./../src/layouts/Default.vue')['default']
-    Login: typeof import('./../src/views/system/Login.vue')['default']
-    MenuFoldOutlined: typeof import('@ant-design/icons-vue')['MenuFoldOutlined']
-    MenuUnfoldOutlined: typeof import('@ant-design/icons-vue')['MenuUnfoldOutlined']
-    PageNotFound: typeof import('./../src/views/system/abnormal/PageNotFound.vue')['default']
-    PageTab: typeof import('./../src/layouts/PageTab/index.vue')['default']
-    Root: typeof import('./../src/views/system/Root.vue')['default']
-    Sidebar: typeof import('./../src/layouts/Sidebar.vue')['default']
-    Test: typeof import('./../src/views/modules/Test.vue')['default']
-    UserOutlined: typeof import('@ant-design/icons-vue')['UserOutlined']
+    AButton: typeof import('ant-design-vue/es')['Button'];
+    AConfigProvider: typeof import('ant-design-vue/es')['ConfigProvider'];
+    ALayout: typeof import('ant-design-vue/es')['Layout'];
+    ALayoutContent: typeof import('ant-design-vue/es')['LayoutContent'];
+    ALayoutSider: typeof import('ant-design-vue/es')['LayoutSider'];
+    AMenu: typeof import('ant-design-vue/es')['Menu'];
+    AMenuItem: typeof import('ant-design-vue/es')['MenuItem'];
+    ASubMenu: typeof import('ant-design-vue/es')['SubMenu'];
+    Default: typeof import('./../src/layouts/Default.vue')['default'];
+    Login: typeof import('./../src/views/system/Login.vue')['default'];
+    MenuFoldOutlined: typeof import('@ant-design/icons-vue')['MenuFoldOutlined'];
+    MenuUnfoldOutlined: typeof import('@ant-design/icons-vue')['MenuUnfoldOutlined'];
+    PageNotFound: typeof import('./../src/views/system/abnormal/PageNotFound.vue')['default'];
+    PageTab: typeof import('./../src/layouts/PageTab/index.vue')['default'];
+    Root: typeof import('./../src/views/system/Root.vue')['default'];
+    Sidebar: typeof import('./../src/layouts/Sidebar.vue')['default'];
+    Test: typeof import('./../src/views/modules/Test.vue')['default'];
+    UserOutlined: typeof import('@ant-design/icons-vue')['UserOutlined'];
   }
 }
 
-export { }
+export {};
