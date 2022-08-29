@@ -1,8 +1,7 @@
 import axios from 'axios';
 import { message } from 'ant-design-vue';
-// import { platForm } from 'vitevuu';
 import { APIBASE } from '@/enums/apiPrefixEnum';
-import { getAccountId, getCorpId, getToken, getUserId } from '@/utils/auth';
+import { getFromStorage } from '@/utils';
 import { handleBlob } from './handleBlob';
 
 const clientType: ClientType = 'app';
@@ -10,8 +9,6 @@ const clientType: ClientType = 'app';
 const defaultHeaders = {
   'Content-Type': 'application/json;charset=UTF-8',
   clientType,
-  // platform: platForm(),
-  // platformClientId: platForm(),
 };
 
 const http = axios.create({
@@ -31,19 +28,19 @@ const http = axios.create({
 // 请求拦截
 http.interceptors.request.use(
   (conf: any) => {
-    conf.headers.Authorization = getToken(true);
+    conf.headers.Authorization = `bearer ${getFromStorage('token')}`;
 
-    if (getCorpId()) {
-      conf.headers.corpId = getCorpId();
+    if (getFromStorage('corpId')) {
+      conf.headers.corpId = getFromStorage('corpId');
     }
 
-    if (getUserId()) {
-      conf.headers.userId = getUserId();
-      conf.headers.userUuid = getUserId();
+    if (getFromStorage('userId')) {
+      conf.headers.userId = getFromStorage('userId');
+      conf.headers.userUuid = getFromStorage('userId');
     }
 
-    if (getAccountId()) {
-      conf.headers.accountId = getAccountId();
+    if (getFromStorage(['accoundId'])) {
+      conf.headers.accountId = getFromStorage(['accoundId']);
     }
 
     return conf;

@@ -1,6 +1,6 @@
 <script setup lang="ts">
   import { apiLogin } from '@/apis/system';
-  import { saveInfoToStorage } from '@/utils/auth';
+  import { saveInfoToStorage } from '@/utils';
 
   const accountMap = {
     test1: {
