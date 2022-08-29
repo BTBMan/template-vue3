@@ -14,16 +14,23 @@ module.exports = {
     },
   ],
   rules: {
+    'selector-class-pattern': '(.*)',
     'selector-pseudo-class-no-unknown': [
       true,
       {
-        ignorePseudoClasses: ['global'],
+        ignorePseudoClasses: ['global', 'deep'],
       },
     ],
     'selector-pseudo-element-no-unknown': [
       true,
       {
         ignorePseudoElements: ['v-deep'],
+      },
+    ],
+    'function-no-unknown': [
+      true,
+      {
+        ignoreFunctions: ['fade'],
       },
     ],
     'at-rule-no-unknown': [
