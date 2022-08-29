@@ -1,6 +1,6 @@
 import axios from 'axios';
 import { message } from 'ant-design-vue';
-import { APIBASE } from '@/enums/apiPrefixEnum';
+import { APIBASE } from '@/enums';
 import { getFromStorage } from '@/utils';
 import { handleBlob } from './handleBlob';
 
