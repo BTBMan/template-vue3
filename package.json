@@ -18,8 +18,8 @@
     "fix:eslint": "npm run lint:eslint -- --fix",
     "fix:prettier": "npm run prettier -- --write",
     "fix:stylelint": "npm run lint:stylelint -- --fix",
-    "commit": "node ./node_modules/cz-customizable/standalone.js",
-    "test:unit": "vitest --environment jsdom"
+    "test:unit": "vitest --environment jsdom",
+    "commit": "node ./node_modules/cz-customizable/standalone.js"
   },
   "dependencies": {
     "@ant-design/icons-vue": "^6.1.0",
